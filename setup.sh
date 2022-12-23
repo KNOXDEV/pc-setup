@@ -8,7 +8,7 @@ function install_deb_url() {
 }
 
 function install_font() {
-	sudo wget $1 -P "~/.local/share/fonts/"
+	wget $1 -P "~/.local/share/fonts/"
 	fc-cache
 }
 
