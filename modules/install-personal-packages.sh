@@ -1,3 +1,4 @@
+source ./functions.sh
 
 sudo apt install -y audacity calf-plugins celluloid firefox-esr \
 	fonts-cantarell fonts-jetbrains-mono fonts-roboto \
