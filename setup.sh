@@ -1,28 +1,6 @@
 #!/bin/bash
 
-function install_deb_url() {
-	TEMP_DEB="$(mktemp)" &&
-	wget -O "$TEMP_DEB" $1 &&
-	sudo dpkg -i "$TEMP_DEB"
-	rm -f "$TEMP_DEB"
-}
-
-function install_font() {
-	wget $1 -P "~/.local/share/fonts/"
-	fc-cache
-}
-
-function ask_permission() {
-	while true; do
-		echo -n "$1 (y/n) "
-	    read yn
-	    case $yn in
-	        [Yy]* ) return 0; break;;
-	        [Nn]* ) return 1;;
-	        * ) echo "Please answer yes or no.";;
-	    esac
-	done
-}
+source ./functions.sh
 
 # get ready to install some repos
 sudo apt update && sudo apt install -y \
