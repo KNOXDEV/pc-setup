@@ -1,5 +1,4 @@
 sudo apt install -y audacity calf-plugins celluloid firefox-esr \
-	fonts-cantarell fonts-jetbrains-mono fonts-roboto \
 	gnome-shell-extension-manager kdenlive neofetch	neovim \
 	obs-studio texlive transmission-gtk virt-manager
 
