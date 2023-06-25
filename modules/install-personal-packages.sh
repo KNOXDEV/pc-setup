@@ -1,6 +1,8 @@
 sudo apt install -y audacity calf-plugins celluloid firefox-esr \
 	gnome-shell-extension-manager kdenlive neofetch	neovim \
-	obs-studio texlive transmission-gtk virt-manager
+	obs-studio transmission-gtk virt-manager ffmpegthumbnailer
 
-install_deb_url "https://discord.com/api/download?platform=linux&format=deb"
-install_deb_url "https://zoom.us/client/5.13.0.599/zoom_amd64.deb"
+
+# obv flatpak required for this
+. install-flatpak.sh
+flatpak install io.bassi.Amberol us.zoom.Zoom com.spotify.Client com.discordapp.Discord org.signal.Signal

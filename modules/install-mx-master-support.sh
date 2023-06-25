@@ -10,7 +10,7 @@ devices: (
         threshold: 30;
     };
     dpi: 1000;
-    hiresscroll: { hires: false; invert: false; target: false; };
+    hiresscroll: { hires: true; invert: false; target: false; };
 
     buttons: (
         {
